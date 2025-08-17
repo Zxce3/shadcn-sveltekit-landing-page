@@ -16,15 +16,15 @@
     message: string;
   }
 
-  let contactForm: ContactFormProps = {
+  let contactForm = $state<ContactFormProps>({
     firstName: "",
     lastName: "",
     email: "",
     subject: "Web Development",
     message: "",
-  };
+  });
 
-  let invalidInputForm = false;
+  let invalidInputForm = $state(false);
 
   function handleSubmit(event: SubmitEvent) {
     event.preventDefault();
@@ -43,7 +43,7 @@
     { value: "FullStack Project", label: "FullStack Project" }
   ];
 
-  $: triggerContent = subjects.find(s => s.value === contactForm.subject)?.label ?? "Select a subject";
+  const triggerContent = $derived(subjects.find(s => s.value === contactForm.subject)?.label ?? "Select a subject");
 </script>
 
 <section id="contact" class="container py-24 sm:py-32">
@@ -100,7 +100,7 @@
     <Card class="bg-muted/60 dark:bg-card">
       <CardHeader class="text-primary text-2xl" />
       <CardContent>
-        <form on:submit={handleSubmit} class="grid gap-4">
+        <form onsubmit={handleSubmit} class="grid gap-4">
           <div class="flex flex-col md:flex-row gap-8">
             <div class="flex flex-col w-full gap-1.5">
               <Label for="firstName">First Name</Label>
