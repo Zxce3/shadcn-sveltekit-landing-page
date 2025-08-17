@@ -3,15 +3,8 @@
     import { Button } from "$lib/components/ui/button";
     import { ArrowRight } from "lucide-svelte";
     import { mode } from "mode-watcher";
-    import { onMount } from 'svelte';
 
-    let imageSrc = 'hero-image-light.jpg';
-    
-    onMount(() => {
-        mode.subscribe(currentMode => {
-            imageSrc = currentMode === 'dark' ? 'hero-image-dark.jpg' : 'hero-image-light.jpg';
-        });
-    });
+    const imageSrc = $derived($mode === 'dark' ? 'hero-image-dark.jpg' : 'hero-image-light.jpg');
 
 </script>
 

@@ -66,7 +66,7 @@
   <div class="flex items-center lg:hidden">
     <Sheet bind:open={isOpen}>
       <SheetTrigger>
-        <Menu on:click={() => (isOpen = true)} class="cursor-pointer" />
+        <Menu onclick={() => (isOpen = true)} class="cursor-pointer" />
       </SheetTrigger>
 
       <SheetContent side="left" class="flex flex-col justify-between rounded-tr-2xl rounded-br-2xl bg-card">
@@ -82,7 +82,7 @@
 
           <div class="flex flex-col gap-2">
             {#each routeList as { href, label }}
-              <a on:click={() => (isOpen = false)} {href}>
+              <a onclick={() => (isOpen = false)} {href}>
                 <Button variant="ghost" class="justify-start text-base w-full">
                   {label}
                 </Button>
