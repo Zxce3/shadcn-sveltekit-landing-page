@@ -13,9 +13,9 @@
   },
   "devDependencies": {
     "@internationalized/date": "^3.12.4",
-    "@sveltejs/adapter-static": "^3.0.11",
-    "@sveltejs/kit": "^2.70.4",
-    "@sveltejs/vite-plugin-svelte": "^5.1.1",
+    "@sveltejs/adapter-static": "^4.0.1",
+    "@sveltejs/kit": "^3.4.0",
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/typography": "^0.5.20",
@@ -38,7 +38,7 @@
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.9.3",
     "vaul-svelte": "^1.0.0-next.7",
-    "vite": "^6.4.6",
+    "vite": "^8.3.8",
     "zod": "^3.25.76"
   },
   "dependencies": {
