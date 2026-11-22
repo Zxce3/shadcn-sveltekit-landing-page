@@ -181,6 +181,7 @@
 </section>
 
 <style>
+    @reference "../../app.css";
   .popular-mobile {
     @apply relative border-primary border-2 shadow-md bg-card scale-[1.02] my-8 ring-2 ring-primary/50 ring-offset-2 ring-offset-background;
   }

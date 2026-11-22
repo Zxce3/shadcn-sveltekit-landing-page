@@ -86,6 +86,7 @@
 </section>
 
 <style>
+    @reference "../../app.css";
     .img-shadow-animation {
         animation-name: img-shadow-animation;
         animation-iteration-count: infinite;
@@ -116,11 +117,11 @@
 
     @keyframes img-border-animation {
         from {
-            @apply border-t-primary/10;
+            border-top-color: hsl(var(--primary) / 0.1);
         }
 
         to {
-            @apply border-t-primary/60;
+            border-top-color: hsl(var(--primary) / 0.6);
         }
     }
 </style>
