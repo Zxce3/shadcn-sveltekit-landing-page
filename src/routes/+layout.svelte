@@ -8,12 +8,14 @@
 <svelte:head>
 	<title>{siteConfig.name}</title>
 	<meta name="description" content={siteConfig.description} />
+	<link rel="canonical" href={siteConfig.url} />
 	<meta name="keywords" content={siteConfig.keywords.join(', ')} />
 	
 	<!-- Open Graph -->
 	<meta property="og:title" content={siteConfig.name} />
 	<meta property="og:description" content={siteConfig.description} />
 	<meta property="og:image" content={siteConfig.ogImage} />
+	<meta property="og:type" content="website" />
 	<meta property="og:url" content={siteConfig.url} />
 	
 	<!-- Twitter -->

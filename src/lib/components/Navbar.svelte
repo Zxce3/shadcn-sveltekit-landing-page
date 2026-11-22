@@ -107,7 +107,7 @@
         <div class="grid grid-cols-2 gap-5 p-4">
           <img
             src="https://github.com/sveltejs.png"
-            alt="Beach"
+            alt="Svelte logo"
             class="h-full w-full rounded-md object-cover"
           />
           <ul class="flex flex-col gap-2">

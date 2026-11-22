@@ -16,6 +16,7 @@
 </script>
 
 <Navbar />
+<main>
 <Hero />
 <Sponsors />
 <Benefits />
@@ -28,4 +29,5 @@
 <Pricing />
 <Contact />
 <Faq />
+</main>
 <Footer />
